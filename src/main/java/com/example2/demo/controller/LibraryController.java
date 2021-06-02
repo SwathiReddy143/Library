@@ -23,6 +23,7 @@ public class LibraryController {
 	
 	@PostMapping("/addLib")
 	public Library addLibrary(@RequestBody Library library) {
+		System.out.println("hi");
 		return ls.insertLibrary(library);
 	}
 	
